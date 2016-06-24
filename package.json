@@ -9,7 +9,6 @@
   },
   "dependencies": {
     "axios": "^0.11.0",
-    "babel": "^6.5.2",
     "babel-runtime": "^6.6.1",
     "bluebird": "3.3.5",
     "body-parser": "^1.15.1",
@@ -32,6 +31,7 @@
     "style-loader": "^0.13.1"
   },
   "devDependencies": {
+    "babel": "^6.5.2",
     "babel-cli": "^6.7.5",
     "babel-loader": "^6.2.4",
     "babel-plugin-transform-runtime": "*",
