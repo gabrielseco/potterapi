@@ -1,0 +1,922 @@
+[
+    {
+        "_id": "5766c425443f9426022ab0b8",
+        "name": "Alastor Moody",
+        "full_name": "Alastor Moody",
+        "birth_date": "Pre 1961",
+        "birth_address": "Scotland, Great Britain",
+        "death_date": "27 July, 1997",
+        "death_address": "South England, Great Britain",
+        "known_as": "Mad-Eye",
+        "hair_colour": "Grey",
+        "eye_colour": "One dark, one electric blue",
+        "skin_colour": "Light",
+        "boggart": "Unknown",
+        "patronus": "Unknown",
+        "occupations": [
+            {
+                "name": "Auror"
+            }
+        ],
+        "house": "Unknown",
+        "actor": "Brendan Gleeson",
+        "wands": [],
+        "gender": "Male",
+        "blood_status": "Pure-blood",
+        "marital_status": "Single"
+    },
+    {
+        "_id": "57667f7195747823c7bcd14e",
+        "name": "Albus Dumbledore",
+        "full_name": "Albus Percival Wulfric Brian Dumbledore",
+        "birth_date": "Summer 1881",
+        "birth_address": "Mould-on-the-Wold, England, Great Britain",
+        "death_date": "30 June 1997 ",
+        "death_address": "Astronomy Tower, Hogwarts School of Witchcraft and Wizardry, Scotland",
+        "known_as": "None",
+        "hair_colour": "Silver, formerly auburn",
+        "eye_colour": "Blue",
+        "skin_colour": "Light",
+        "boggart": "The corpse of his sister, Ariana",
+        "patronus": "Phoenix",
+        "occupations": [
+            {
+                "name": "Head of Transfiguration department"
+            },
+            {
+                "name": "Headmaster of Hogwarts"
+            }
+        ],
+        "house": "Gryffindor",
+        "actor": "Michael Gambon",
+        "wands": [
+            {
+                "dimension": "15",
+                "tree": "Elder",
+                "magical_creature": "Thestral tail hair core"
+            }
+        ],
+        "gender": "Male",
+        "blood_status": "Half blood",
+        "marital_status": "Single"
+    },
+    {
+        "_id": "5766864795747823c7bcd157",
+        "name": "Bellatrix Lestrange",
+        "full_name": "Bellatrix Lestrange Black",
+        "birth_date": "1951",
+        "birth_address": "Great Britain",
+        "death_date": "2 May, 1998",
+        "death_address": "Great Hall, Hogwarts Castle, Scotland, Great Britain",
+        "known_as": "Bella ",
+        "hair_colour": "Black",
+        "eye_colour": "Brown",
+        "skin_colour": "Light",
+        "boggart": "Unknown",
+        "patronus": "Unknown",
+        "occupations": [],
+        "house": "Slytherin",
+        "actor": "Helena Bonham Carter",
+        "wands": [
+            {
+                "dimension": "12¾",
+                "tree": "Walnut",
+                "magical_creature": "dragon heartstring"
+            }
+        ],
+        "gender": "Female",
+        "blood_status": "Pure-blood",
+        "marital_status": "Married"
+    },
+    {
+        "_id": "576b1410cfac3eab0215b0db",
+        "name": "Cedric Diggory",
+        "full_name": "Cedric Diggory",
+        "birth_date": "September/October, 1977",
+        "birth_address": "Great Britain or Ireland",
+        "death_date": "24 June, 1995",
+        "death_address": "Little Hangleton graveyard, England, Great Britain",
+        "known_as": "Pretty boy Diggory",
+        "hair_colour": "Brown",
+        "eye_colour": "Grey",
+        "skin_colour": "Light",
+        "boggart": "Unknown",
+        "patronus": "Unknown",
+        "occupations": [],
+        "house": "Hufflepuff",
+        "actor": "Robert Pattinson",
+        "wands": [
+            {
+                "dimension": "12¼",
+                "tree": "Ash",
+                "magical_creature": "unicorn hair"
+            }
+        ],
+        "gender": "Male",
+        "blood_status": "Half-blood",
+        "marital_status": "Single"
+    },
+    {
+        "_id": "576b11d1cfac3eab0215b0d6",
+        "name": "Dolores Umbridge",
+        "full_name": "Dolores Jane Umbridge",
+        "birth_date": "26 August,pre 1965",
+        "birth_address": "Great Britain",
+        "death_date": "Unknown",
+        "death_address": "Unknown",
+        "known_as": "None",
+        "hair_colour": "Mouse brown",
+        "eye_colour": "Brown",
+        "skin_colour": "Light",
+        "boggart": "Unknown",
+        "patronus": "Persian cat",
+        "occupations": [
+            {
+                "name": "Head of the Improper Use of Magic Office"
+            },
+            {
+                "name": "Senior Undersecretary to the Minister for Magic"
+            },
+            {
+                "name": "Professor of Defense Against the Dark Arts at Hogwarts"
+            },
+            {
+                "name": "High Inquisitor of Hogwarts"
+            },
+            {
+                "name": "Headmistress of Hogwarts"
+            },
+            {
+                "name": "Head of the Muggle-Born Registration Commission"
+            }
+        ],
+        "house": "Slytherin",
+        "actor": "Imelda Staunton",
+        "wands": [
+            {
+                "dimension": "8",
+                "tree": "Birch",
+                "magical_creature": "dragon heartstring"
+            }
+        ],
+        "gender": "Female",
+        "blood_status": "Half-blood",
+        "marital_status": "Single"
+    },
+    {
+        "_id": "5766832b95747823c7bcd151",
+        "name": "Draco Malfoy",
+        "full_name": "Draco Lucius Malfoy",
+        "birth_date": "5 June, 1980",
+        "birth_address": "Great Britain",
+        "death_date": "Unknown",
+        "death_address": "Unknown",
+        "known_as": "None",
+        "hair_colour": "White Blond",
+        "eye_colour": "Grey",
+        "skin_colour": "Light",
+        "boggart": "Unknown",
+        "patronus": "Unknown",
+        "occupations": [],
+        "house": "Slytherin",
+        "actor": "Tom Felton",
+        "wands": [
+            {
+                "dimension": "10",
+                "tree": "Hawthorn",
+                "magical_creature": "unicorn hair"
+            },
+            {
+                "dimension": "18",
+                "tree": "Elm",
+                "magical_creature": "dragon heartstring"
+            },
+            {
+                "dimension": "15",
+                "tree": "Elder",
+                "magical_creature": "Thestral tail hair"
+            }
+        ],
+        "gender": "Male",
+        "blood_status": "Pure blood",
+        "marital_status": "Married"
+    },
+    {
+        "_id": "576b125ccfac3eab0215b0d7",
+        "name": "Filius Flitwick",
+        "full_name": "Filius Flitwick",
+        "birth_date": "17 October",
+        "birth_address": "Great Britain or Ireland",
+        "death_date": "Unknown",
+        "death_address": "Unknown",
+        "known_as": "None",
+        "hair_colour": "White",
+        "eye_colour": "Unknown",
+        "skin_colour": "Light",
+        "boggart": "Voldemort",
+        "patronus": "Non-corporeal",
+        "occupations": [
+            {
+                "name": "Charms Master at Hogwarts School of Witchcraft and Wizardry"
+            },
+            {
+                "name": "Head of Ravenclaw House at Hogwarts School of Witchcraft and Wizardry"
+            },
+            {
+                "name": "Conductor of the Frog Choir at Hogwarts School of Witchcraft and Wizardry"
+            }
+        ],
+        "house": "Ravenclaw",
+        "actor": "Warwick Davis",
+        "wands": [],
+        "gender": "Male",
+        "blood_status": "Part-Goblin",
+        "marital_status": "Single"
+    },
+    {
+        "_id": "576686ac95747823c7bcd158",
+        "name": "Fred Weasley",
+        "full_name": "Fred Weasley",
+        "birth_date": "1 April, 1978 ",
+        "birth_address": "Great Britain",
+        "death_date": "2 May, 1998 ",
+        "death_address": "Hogwarts Castle, Scotland, Great Britain",
+        "known_as": "None",
+        "hair_colour": "Red",
+        "eye_colour": "Brown",
+        "skin_colour": "Light",
+        "boggart": "Lord Voldemort",
+        "patronus": "Unknown",
+        "occupations": [
+            {
+                "name": "Co-owner of Weasleys' Wizard Wheezes"
+            }
+        ],
+        "house": "Gryffindor",
+        "actor": "Unknown",
+        "wands": [
+            {
+                "dimension": "James Phelps",
+                "tree": "undefined",
+                "magical_creature": "undefined"
+            }
+        ],
+        "gender": "Male",
+        "blood_status": "Pure-blood",
+        "marital_status": "Single"
+    },
+    {
+        "_id": "5766850195747823c7bcd155",
+        "name": "George Weasley",
+        "full_name": "George Weasley",
+        "birth_date": "1 April, 1978",
+        "birth_address": "Great Britain",
+        "death_date": "Unknown",
+        "death_address": "Unknown",
+        "known_as": "None",
+        "hair_colour": "Red",
+        "eye_colour": "Brown",
+        "skin_colour": "Light",
+        "boggart": "Lord Voldemort",
+        "patronus": "Unknown",
+        "occupations": [
+            {
+                "name": "Co-Owner of Weasleys' Wizard Wheezes"
+            }
+        ],
+        "house": "Gryffindor",
+        "actor": "Oliver Phelps",
+        "wands": [],
+        "gender": "Male",
+        "blood_status": "Pure-blood",
+        "marital_status": "Married"
+    },
+    {
+        "_id": "576b12eecfac3eab0215b0d8",
+        "name": "Gilderoy Lockhart",
+        "full_name": "Gilderoy Lockhart",
+        "birth_date": "26 January, 1964",
+        "birth_address": "Great Britain or Ireland",
+        "death_date": "Unknown",
+        "death_address": "Unknown",
+        "known_as": "None",
+        "hair_colour": "Blond",
+        "eye_colour": "Blue",
+        "skin_colour": "Light",
+        "boggart": "Cornish Pixies",
+        "patronus": "Non-corporeal",
+        "occupations": [
+            {
+                "name": "Author"
+            },
+            {
+                "name": "Professor of Defence Against the Dark Arts at Hogwarts"
+            }
+        ],
+        "house": "Ravenclaw",
+        "actor": "Kenneth Branagh",
+        "wands": [
+            {
+                "dimension": "9",
+                "tree": "Cherry",
+                "magical_creature": "dragon heartstring"
+            }
+        ],
+        "gender": "Male",
+        "blood_status": "Half-blood",
+        "marital_status": "Single"
+    },
+    {
+        "_id": "576b10e8cfac3eab0215b0d5",
+        "name": "Ginevra Weasley",
+        "full_name": "Ginevra Molly Potter",
+        "birth_date": "11 August, 1981",
+        "birth_address": "Great Britain",
+        "death_date": "Unknown",
+        "death_address": "Unknown",
+        "known_as": "Ginny ",
+        "hair_colour": "Red",
+        "eye_colour": "Bright brown",
+        "skin_colour": "Light",
+        "boggart": "Unknown",
+        "patronus": "Horse",
+        "occupations": [
+            {
+                "name": "Quidditch Player for Holyhead Harpies"
+            },
+            {
+                "name": "Senior Quidditch reporter for the Daily Prophet"
+            }
+        ],
+        "house": "Gryffindor",
+        "actor": "Bonnie Wright",
+        "wands": [
+            {
+                "dimension": "Unknown length",
+                "tree": "Yew",
+                "magical_creature": "unknown core"
+            }
+        ],
+        "gender": "Female",
+        "blood_status": "Pure-blood",
+        "marital_status": "Married "
+    },
+    {
+        "_id": "576685b595747823c7bcd156",
+        "name": "Harry Potter",
+        "full_name": "Harry James Potter",
+        "birth_date": "31 July, 1980",
+        "birth_address": "Godric's Hollow, West Country, England, Great Britain",
+        "death_date": "Unknown",
+        "death_address": "Unknown",
+        "known_as": "The Boy Who Lived",
+        "hair_colour": "Jet black",
+        "eye_colour": "Bright green",
+        "skin_colour": "Light",
+        "boggart": "Dementor",
+        "patronus": "Stag",
+        "occupations": [
+            {
+                "name": "Head of Auror Office"
+            }
+        ],
+        "house": "Gryffindor",
+        "actor": "Daniel Radcliffe",
+        "wands": [
+            {
+                "dimension": "11",
+                "tree": "Holly",
+                "magical_creature": "phoenix feather"
+            },
+            {
+                "dimension": "10¾",
+                "tree": "Vine",
+                "magical_creature": "dragon heartstring"
+            },
+            {
+                "dimension": "10",
+                "tree": "Blackthorn",
+                "magical_creature": "unknown core"
+            },
+            {
+                "dimension": "10",
+                "tree": "Hawthorn",
+                "magical_creature": "unicorn hair"
+            },
+            {
+                "dimension": "15",
+                "tree": "Elder",
+                "magical_creature": "thestral tail hair core "
+            }
+        ],
+        "gender": "Male",
+        "blood_status": "Half-blood",
+        "marital_status": "Married "
+    },
+    {
+        "_id": "5766800695747823c7bcd14f",
+        "name": "Hermione Granger",
+        "full_name": "Hermione Jean Granger",
+        "birth_date": "19 September, 1979",
+        "birth_address": " England,Great Britain",
+        "death_date": "Unknown",
+        "death_address": "Unknown",
+        "known_as": "None",
+        "hair_colour": "Brown",
+        "eye_colour": "Brown",
+        "skin_colour": "Light",
+        "boggart": "Failure",
+        "patronus": "Otter",
+        "occupations": [
+            {
+                "name": "Department for the Regulation and Control of Magical Creatures"
+            },
+            {
+                "name": "Deputy Head of the Department of Magical Law Enforcement"
+            }
+        ],
+        "house": "Gryffindor",
+        "actor": "Emma Watson",
+        "wands": [
+            {
+                "dimension": "10¾",
+                "tree": "vine wood",
+                "magical_creature": "dragon heartstring"
+            },
+            {
+                "dimension": "12¾",
+                "tree": "walnut",
+                "magical_creature": "dragon heartstring"
+            }
+        ],
+        "gender": "Female",
+        "blood_status": "Muggle-born",
+        "marital_status": "Married "
+    },
+    {
+        "_id": "5766844c95747823c7bcd153",
+        "name": "James Potter I",
+        "full_name": "James Potter",
+        "birth_date": "27 March, 1960",
+        "birth_address": "England, Great Britain",
+        "death_date": "31 October, 1981 ",
+        "death_address": "Godric's Hollow, West Country, England, Great Britain",
+        "known_as": "Prongs",
+        "hair_colour": "Jet black",
+        "eye_colour": "Hazel",
+        "skin_colour": "Light",
+        "boggart": "Unknown",
+        "patronus": "Stag",
+        "occupations": [],
+        "house": "Gryffindor",
+        "actor": "Adrian Rawlins",
+        "wands": [
+            {
+                "dimension": "11",
+                "tree": "Mahogany",
+                "magical_creature": "unknown core"
+            }
+        ],
+        "gender": "Male",
+        "blood_status": "Pure-blood",
+        "marital_status": "Married"
+    },
+    {
+        "_id": "576683d595747823c7bcd152",
+        "name": "Lily J. Potter",
+        "full_name": "Lily James Potter",
+        "birth_date": "30 January, 1960",
+        "birth_address": " Cokeworth",
+        "death_date": "31 October, 1981",
+        "death_address": "Godric's Hollow, West Country, England, Great Britain",
+        "known_as": "None",
+        "hair_colour": "Auburn",
+        "eye_colour": "Bright green",
+        "skin_colour": "Light",
+        "boggart": "Unknown",
+        "patronus": "Doe",
+        "occupations": [],
+        "house": "Gryffindor",
+        "actor": "Geraldine Somerville",
+        "wands": [
+            {
+                "dimension": "10¼",
+                "tree": "Willow",
+                "magical_creature": "unknown core"
+            }
+        ],
+        "gender": "Female",
+        "blood_status": "Muggle-born",
+        "marital_status": "Married "
+    },
+    {
+        "_id": "576b0fc2cfac3eab0215b0d3",
+        "name": "Luna Lovegood",
+        "full_name": "Luna Lovegood",
+        "birth_date": "13 February, 1981",
+        "birth_address": " Great Britain",
+        "death_date": "Unknown",
+        "death_address": "Unknown",
+        "known_as": "Loony Lovegood ",
+        "hair_colour": "Dirty blonde",
+        "eye_colour": "Silvery grey",
+        "skin_colour": "Light",
+        "boggart": "Unknown",
+        "patronus": "Hare",
+        "occupations": [
+            {
+                "name": "Magizoologist"
+            }
+        ],
+        "house": "Ravenclaw",
+        "actor": "Evanna Lynch",
+        "wands": [],
+        "gender": "Female",
+        "blood_status": "Pure-blood",
+        "marital_status": "Married"
+    },
+    {
+        "_id": "5766877895747823c7bcd15a",
+        "name": "Minerva McGonagall",
+        "full_name": "Minerva McGonagall",
+        "birth_date": "4 October, 1935",
+        "birth_address": "Caithness, Scotland, Great Britain",
+        "death_date": "Unknown",
+        "death_address": "Unknown",
+        "known_as": "None",
+        "hair_colour": "Black",
+        "eye_colour": "Green",
+        "skin_colour": "Light",
+        "boggart": "Voldemort",
+        "patronus": "Cat",
+        "occupations": [
+            {
+                "name": "Department of Magical Law Enforcement employee"
+            },
+            {
+                "name": "Professor of Transfiguration at Hogwarts School of Witchcraft and Wizardry"
+            },
+            {
+                "name": "Head of the Transfiguration department at Hogwarts School of Witchcraft and Wizardry"
+            },
+            {
+                "name": "Head of Gryffindor House"
+            },
+            {
+                "name": "Deputy Headmistress of Hogwarts School of Witchcraft and Wizardry"
+            },
+            {
+                "name": "Headmistress of Hogwarts School of Witchcraft and Wizardry"
+            }
+        ],
+        "house": "Gryffindor",
+        "actor": "Maggie Smith",
+        "wands": [
+            {
+                "dimension": "9½",
+                "tree": "Fir",
+                "magical_creature": "dragon heartstring"
+            }
+        ],
+        "gender": "Female",
+        "blood_status": "Half-blood",
+        "marital_status": "Widowed"
+    },
+    {
+        "_id": "576b0cb2cfac3eab0215b0d1",
+        "name": "Neville Longbottom",
+        "full_name": "Neville Longbottom",
+        "birth_date": "30 July, 1980",
+        "birth_address": "Great Britain",
+        "death_date": "Unknown",
+        "death_address": "Unknown",
+        "known_as": "None",
+        "hair_colour": "Blond",
+        "eye_colour": "Unknown",
+        "skin_colour": "Light",
+        "boggart": "Severus Snape",
+        "patronus": "Non-corporeal",
+        "occupations": [
+            {
+                "name": "Auror"
+            },
+            {
+                "name": "Professor of Herbology at Hogwarts School of Witchcraft and Wizardry"
+            }
+        ],
+        "house": "Gryffindor",
+        "actor": "Matthew Lewis",
+        "wands": [
+            {
+                "dimension": "13",
+                "tree": "Cherry",
+                "magical_creature": "unicorn hair"
+            }
+        ],
+        "gender": "Male",
+        "blood_status": "Pure-blood",
+        "marital_status": "Married"
+    },
+    {
+        "_id": "5766886e95747823c7bcd15c",
+        "name": "Nymphadora Tonks",
+        "full_name": "Nymphadora Lupin Tonks",
+        "birth_date": "1973",
+        "birth_address": "Great Britain",
+        "death_date": "2 May, 1998",
+        "death_address": "Hogwarts Castle, Scotland, Great Britain",
+        "known_as": "Dora",
+        "hair_colour": "Variable (Bubble gum pink; biologically light brown)",
+        "eye_colour": "Variable (Dark, twinkling)",
+        "skin_colour": "Variable (Light)",
+        "boggart": "Unknown",
+        "patronus": "Wolf",
+        "occupations": [
+            {
+                "name": "Auror"
+            }
+        ],
+        "house": "Hufflepuff",
+        "actor": "Natalia Tena",
+        "wands": [],
+        "gender": "Female",
+        "blood_status": "Half-blood",
+        "marital_status": "Single"
+    },
+    {
+        "_id": "576b138ecfac3eab0215b0da",
+        "name": "Quirinus Quirrell",
+        "full_name": "Quirinus Quirrell",
+        "birth_date": "26 September",
+        "birth_address": "Great Britain or Ireland",
+        "death_date": "4 June, 1992",
+        "death_address": "Underground Chambers, Hogwarts Castle",
+        "known_as": "None",
+        "hair_colour": "Bald",
+        "eye_colour": "Pale blue",
+        "skin_colour": "Light",
+        "boggart": "Unknown",
+        "patronus": "Non-corporeal",
+        "occupations": [
+            {
+                "name": "Professor of Muggle Studies at Hogwarts School of Witchcraft and Wizardry"
+            },
+            {
+                "name": "Professor of Defense Against the Dark Arts at Hogwarts School of Witchcraft and Wizardry"
+            }
+        ],
+        "house": "Ravenclaw",
+        "actor": "Ian Hart",
+        "wands": [
+            {
+                "dimension": "9",
+                "tree": "Alder",
+                "magical_creature": "unicorn hair"
+            }
+        ],
+        "gender": "Male",
+        "blood_status": "Half-blood",
+        "marital_status": "Single"
+    },
+    {
+        "_id": "576688f495747823c7bcd15d",
+        "name": "Remus Lupin",
+        "full_name": "Remus John Lupin",
+        "birth_date": "10 March, 1960",
+        "birth_address": "Great Britain",
+        "death_date": "2 May, 1998 ",
+        "death_address": "Hogwarts Castle, Scotland, Great Britain",
+        "known_as": "Moony ",
+        "hair_colour": "Light brown flecked with grey",
+        "eye_colour": "Green",
+        "skin_colour": "Light",
+        "boggart": "Full moon",
+        "patronus": "Wolf",
+        "occupations": [
+            {
+                "name": "Professor of Defense Against the Dark Arts at Hogwarts School of Witchcraft and Wizardry"
+            }
+        ],
+        "house": "Gryffindor",
+        "actor": "David Thewlis",
+        "wands": [
+            {
+                "dimension": "10¼",
+                "tree": "Cypress",
+                "magical_creature": "unicorn hair"
+            }
+        ],
+        "gender": "Male",
+        "blood_status": "Half-blood",
+        "marital_status": "Married"
+    },
+    {
+        "_id": "5766894695747823c7bcd15e",
+        "name": "Ronald Weasley",
+        "full_name": "Ronald Bilius Weasley",
+        "birth_date": "1 March, 1980",
+        "birth_address": "Ottery St. Catchpole, Devon, England, Great Britain",
+        "death_date": "Unknown",
+        "death_address": "Unknown",
+        "known_as": "None",
+        "hair_colour": "Red",
+        "eye_colour": "Blue",
+        "skin_colour": "Light",
+        "boggart": "Aragog",
+        "patronus": "Jack Russell Terrier",
+        "occupations": [
+            {
+                "name": "Auror"
+            },
+            {
+                "name": "Weasleys' Wizard Wheezes co-manager"
+            }
+        ],
+        "house": "Gryffindor",
+        "actor": "Rupert Grint",
+        "wands": [
+            {
+                "dimension": "12",
+                "tree": "Ash",
+                "magical_creature": "unicorn tail hair"
+            },
+            {
+                "dimension": "14",
+                "tree": "Willow",
+                "magical_creature": "unicorn tail hair"
+            },
+            {
+                "dimension": "9¼",
+                "tree": "Chestnut",
+                "magical_creature": "Dragon heartstring"
+            }
+        ],
+        "gender": "Male",
+        "blood_status": "Pure-blood",
+        "marital_status": "Married "
+    },
+    {
+        "_id": "576687f595747823c7bcd15b",
+        "name": "Rubeus Hagrid",
+        "full_name": "Rubeus Hagrid",
+        "birth_date": "6 December, 1928",
+        "birth_address": "Forest of Dean, West Country, England",
+        "death_date": "Unknown",
+        "death_address": "Unknown",
+        "known_as": "None",
+        "hair_colour": "Black",
+        "eye_colour": "Black",
+        "skin_colour": "Light",
+        "boggart": "Lord Voldemort",
+        "patronus": "None",
+        "occupations": [
+            {
+                "name": "Keeper of Keys and Grounds at Hogwarts School of Witchcraft and Wizardry"
+            },
+            {
+                "name": "Professor of Care of Magical Creatures at Hogwarts School of Witchcraft and Wizardry"
+            }
+        ],
+        "house": "Gryffindor",
+        "actor": "Robbie Coltrane",
+        "wands": [
+            {
+                "dimension": "16",
+                "tree": "Oak",
+                "magical_creature": "unknown core"
+            }
+        ],
+        "gender": "Male",
+        "blood_status": "Part-Human",
+        "marital_status": "Single"
+    },
+    {
+        "_id": "576682a095747823c7bcd150",
+        "name": "Severus Snape",
+        "full_name": "Severus Snape",
+        "birth_date": "9 January, 1960",
+        "birth_address": "Spinner's End, Cokeworth, Midlands, England",
+        "death_date": "2 May, 1998",
+        "death_address": "Shrieking Shack, Hogsmeade, Scotland",
+        "known_as": "Half-Blood Prince",
+        "hair_colour": "Black",
+        "eye_colour": "Black",
+        "skin_colour": "Light",
+        "boggart": "Lord Voldemort",
+        "patronus": "Doe",
+        "occupations": [
+            {
+                "name": "Potions Master at Hogwarts School of Witchcraft and Wizardry"
+            },
+            {
+                "name": "Head of Slytherin House"
+            },
+            {
+                "name": "Professor of Defense Against the Dark Arts at Hogwarts School of Witchcraft and Wizardry"
+            },
+            {
+                "name": "Headmaster of Hogwarts School of Witchcraft and Wizardry"
+            }
+        ],
+        "house": "Slytherin",
+        "actor": "Alan Rickman",
+        "wands": [],
+        "gender": "Male",
+        "blood_status": "Pure blood",
+        "marital_status": "Single"
+    },
+    {
+        "_id": "576684cb95747823c7bcd154",
+        "name": "Sirius Black",
+        "full_name": "Sirius Black",
+        "birth_date": "3 November, 1959",
+        "birth_address": "England, Great Britain",
+        "death_date": "18 June, 1996 ",
+        "death_address": "Death Chamber, Department of Mysteries, Ministry of Magic, Whitehall, London, England, Great Britain",
+        "known_as": "Padfoot",
+        "hair_colour": "Black",
+        "eye_colour": "Grey",
+        "skin_colour": "Light",
+        "boggart": "Unknown",
+        "patronus": "Unknown",
+        "occupations": [],
+        "house": "Gryffindor",
+        "actor": "Gary Oldman",
+        "wands": [],
+        "gender": "Male",
+        "blood_status": "Pure-blood",
+        "marital_status": "Single"
+    },
+    {
+        "_id": "576b1348cfac3eab0215b0d9",
+        "name": "Sybill Trelawney",
+        "full_name": "Sybill Patricia Trelawney",
+        "birth_date": "9 March, prior to 1962",
+        "birth_address": "Great Britain",
+        "death_date": "Unknown",
+        "death_address": "Unknown",
+        "known_as": "None",
+        "hair_colour": "Brown",
+        "eye_colour": "Dark green",
+        "skin_colour": "White",
+        "boggart": "Lord Voldemort",
+        "patronus": "Non-corporeal",
+        "occupations": [
+            {
+                "name": "Professor of Divination at Hogwarts School"
+            },
+            {
+                "name": "Head of the Divination Workshop at Hogwarts School"
+            }
+        ],
+        "house": "Ravenclaw",
+        "actor": "Emma Thompson",
+        "wands": [
+            {
+                "dimension": "9½ inches",
+                "tree": "Hazel",
+                "magical_creature": "Unicorn hair"
+            }
+        ],
+        "gender": "Female",
+        "blood_status": "Half-blood",
+        "marital_status": "Divorced"
+    },
+    {
+        "_id": "575d01ad5d89d1170f80b817",
+        "name": "Tom Riddle",
+        "full_name": "Tom Marvolo Riddle",
+        "birth_date": "31 December, 1926",
+        "birth_address": "Wool's Orphanage, London, England, Great Britain",
+        "death_date": "2 May, 1998",
+        "death_address": "Great Hall, Hogwarts Castle, Scotland, Great Britain",
+        "known_as": "Lord Voldemort",
+        "hair_colour": "Bald",
+        "eye_colour": "Red",
+        "skin_colour": "White",
+        "boggart": "His own corpse",
+        "patronus": "None",
+        "occupations": [
+            {
+                "name": "Assistant at Borgin and Burkes (formerly)"
+            }
+        ],
+        "house": "Slytherin",
+        "actor": "Ralph Fiennes",
+        "wands": [
+            {
+                "dimension": "13½",
+                "tree": "Yew",
+                "magical_creature": "Phoenix core"
+            },
+            {
+                "dimension": "18",
+                "tree": "Elm",
+                "magical_creature": "Dragon Heartstring"
+            }
+        ],
+        "gender": "Male",
+        "blood_status": "Half blood",
+        "marital_status": "Single"
+    }
+]
