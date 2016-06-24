@@ -11,12 +11,12 @@ import {
   MongoClient,
   ObjectId
 } from 'mongodb';
-import Html from './components/Html';
-import schema from './models/Schema';
+import Html from '../components/Html';
+import schema from '../models/Schema';
 import scrapeIt from 'scrape-it';
 import {
   mapArrayValues
-} from './functions';
+} from '../functions';
 
 
 dotenv.config()
@@ -31,7 +31,7 @@ const port = process.env.PORT || 5000;
 if (process.env.NODE_ENV !== 'production') {
   const webpack = require('webpack');
   const webpackMiddleware = require('webpack-dev-middleware');
-  const webpackConfig = require('./tools/webpack.config').default;
+  const webpackConfig = require('../tools/webpack.config').default;
   app.use(webpackMiddleware(webpack(webpackConfig), {
     stats: webpackConfig.stats
   }));
