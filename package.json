@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "axios": "^0.11.0",
+    "babel": "^6.5.2",
     "babel-runtime": "^6.6.1",
     "bluebird": "3.3.5",
     "body-parser": "^1.15.1",
@@ -42,7 +43,7 @@
     "webpack-dev-middleware": "^1.6.1"
   },
   "scripts": {
-    "start": "babel-node ./server.js",
-    "generate": "babel-node ./generateData.js"
+    "start": "./node_modules/.bin/babel-node ./server.js",
+    "generate": "./node_modules/.bin/babel-node ./generateData.js"
   }
 }
