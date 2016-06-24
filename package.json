@@ -31,7 +31,6 @@
     "style-loader": "^0.13.1"
   },
   "devDependencies": {
-    "babel": "^6.5.2",
     "babel-cli": "^6.7.5",
     "babel-loader": "^6.2.4",
     "babel-plugin-transform-runtime": "*",
