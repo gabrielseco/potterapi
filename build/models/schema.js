@@ -162,10 +162,16 @@ var Mutation = new _graphql.GraphQLObjectType({
     }
   }
 });
-
-var Schema = new _graphql.GraphQLSchema({
-  query: Query,
-  mutation: Mutation
-});
+var Schema = null;
+if (process.env.NODE_ENV !== 'production') {
+  Schema = new _graphql.GraphQLSchema({
+    query: Query,
+    mutation: Mutation
+  });
+} else {
+  Schema = new _graphql.GraphQLSchema({
+    query: Query
+  });
+}
 
 exports.default = Schema;

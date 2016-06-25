@@ -41,35 +41,28 @@ if (process.env.NODE_ENV !== 'production') {
 app.use(bodyParser.json()); // support json encoded bodies
 app.use(bodyParser.urlencoded({ extended: true })); // support encoded bodies
 
-app.use('/', express.static('public'));
-
-
-
-// Register GraphQL middleware
-// https://github.com/graphql/express-graphql
-app.use('/graphql', graphql(req => ({
-  schema,
-  graphiql: true,
-  rootValue: {
-    db: req.app.locals.db,
-    ObjectId: ObjectId
-  }
-})));
-
-// Database access example
-app.get('/test', async(req, res, next) => {
-  try {
-    const db = req.app.locals.db;
-    await db.collection('log').insertOne({
-      time: new Date(),
-      ip: req.ip,
-      message: '/test visit'
-    });
-    res.send('<h1>Hello, world!</h1>');
-  } catch (err) {
-    next(err);
-  }
-});
+if(process.env.NODE_ENV !== 'production'){
+  app.use('/', express.static('public'));
+  // Register GraphQL middleware
+  // https://github.com/graphql/express-graphql
+  app.use('/graphql', graphql(req => ({
+    schema,
+    graphiql: true,
+    rootValue: {
+      db: req.app.locals.db,
+      ObjectId: ObjectId
+    }
+  })));
+} else {
+  app.use('/', graphql(req => ({
+    schema,
+    graphiql: true,
+    rootValue: {
+      db: req.app.locals.db,
+      ObjectId: ObjectId
+    }
+  })));
+}
 
 
 app.get('/getCharacter', async(req, res, next) => {

@@ -69,68 +69,39 @@ if (process.env.NODE_ENV !== 'production') {
 app.use(_bodyParser2.default.json()); // support json encoded bodies
 app.use(_bodyParser2.default.urlencoded({ extended: true })); // support encoded bodies
 
-app.use('/', _express2.default.static('public'));
+if (process.env.NODE_ENV !== 'production') {
+  app.use('/', _express2.default.static('public'));
+  // Register GraphQL middleware
+  // https://github.com/graphql/express-graphql
+  app.use('/graphql', (0, _expressGraphql2.default)(function (req) {
+    return {
+      schema: _schema2.default,
+      graphiql: true,
+      rootValue: {
+        db: req.app.locals.db,
+        ObjectId: _mongodb.ObjectId
+      }
+    };
+  }));
+} else {
+  app.use('/', (0, _expressGraphql2.default)(function (req) {
+    return {
+      schema: _schema2.default,
+      graphiql: true,
+      rootValue: {
+        db: req.app.locals.db,
+        ObjectId: _mongodb.ObjectId
+      }
+    };
+  }));
+}
 
-// Register GraphQL middleware
-// https://github.com/graphql/express-graphql
-app.use('/graphql', (0, _expressGraphql2.default)(function (req) {
-  return {
-    schema: _schema2.default,
-    graphiql: true,
-    rootValue: {
-      db: req.app.locals.db,
-      ObjectId: _mongodb.ObjectId
-    }
-  };
-}));
-
-// Database access example
-app.get('/test', function () {
+app.get('/getCharacter', function () {
   var ref = _asyncToGenerator(regeneratorRuntime.mark(function _callee(req, res, next) {
-    var db;
+    var URL;
     return regeneratorRuntime.wrap(function _callee$(_context) {
       while (1) {
         switch (_context.prev = _context.next) {
-          case 0:
-            _context.prev = 0;
-            db = req.app.locals.db;
-            _context.next = 4;
-            return db.collection('log').insertOne({
-              time: new Date(),
-              ip: req.ip,
-              message: '/test visit'
-            });
-
-          case 4:
-            res.send('<h1>Hello, world!</h1>');
-            _context.next = 10;
-            break;
-
-          case 7:
-            _context.prev = 7;
-            _context.t0 = _context['catch'](0);
-
-            next(_context.t0);
-
-          case 10:
-          case 'end':
-            return _context.stop();
-        }
-      }
-    }, _callee, undefined, [[0, 7]]);
-  }));
-
-  return function (_x, _x2, _x3) {
-    return ref.apply(this, arguments);
-  };
-}());
-
-app.get('/getCharacter', function () {
-  var ref = _asyncToGenerator(regeneratorRuntime.mark(function _callee2(req, res, next) {
-    var URL;
-    return regeneratorRuntime.wrap(function _callee2$(_context2) {
-      while (1) {
-        switch (_context2.prev = _context2.next) {
           case 0:
             URL = "http://harrypotter.wikia.com/wiki/" + req.query.query;
 
@@ -159,13 +130,13 @@ app.get('/getCharacter', function () {
 
           case 3:
           case 'end':
-            return _context2.stop();
+            return _context.stop();
         }
       }
-    }, _callee2, undefined);
+    }, _callee, undefined);
   }));
 
-  return function (_x4, _x5, _x6) {
+  return function (_x, _x2, _x3) {
     return ref.apply(this, arguments);
   };
 }());

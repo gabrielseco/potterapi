@@ -88,10 +88,17 @@ const Mutation = new GraphQLObjectType({
     }
   }
 });
+let Schema = null;
+if(process.env.NODE_ENV !== 'production'){
+   Schema = new GraphQLSchema({
+    query: Query,
+    mutation: Mutation
+  });
+} else {
+   Schema = new GraphQLSchema({
+    query: Query
+  });
+}
 
-const Schema = new GraphQLSchema({
-  query: Query,
-  mutation: Mutation
-});
 
 export default Schema;
