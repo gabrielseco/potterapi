@@ -45,10 +45,9 @@
     "clean": "rm -rf build && mkdir build",
     "start": "node ./build/server.js",
     "dev": "babel-node ./src/server.js",
-    "build": "npm run clean && npm run build-server",
+    "build": "npm run clean && npm run build-webpack && npm run build-server",
     "build-server": "babel -d ./build ./src/server.js",
-    "generate": "./node_modules/.bin/babel-node ./generateData.js",
-    "postinstall": "webpack -p --config ./tools/webpack.config.js --progress"
-
+    "build-webpack":"webpack -p --config ./tools/webpack.dist.config.js",
+    "generate": "./node_modules/.bin/babel-node ./generateData.js"
   }
 }

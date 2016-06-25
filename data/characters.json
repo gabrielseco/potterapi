@@ -61,6 +61,64 @@
         "marital_status": "Single"
     },
     {
+        "_id": "576dbcb5aeb3d5ef4ff4dc8f",
+        "name": "Argus Filch",
+        "full_name": "Argus Filch",
+        "birth_date": "Unknown",
+        "birth_address": "Unknown",
+        "death_date": "Unknown",
+        "death_address": "Unknown",
+        "known_as": "None",
+        "hair_colour": "Grey",
+        "eye_colour": "Pale",
+        "skin_colour": "Unknown",
+        "boggart": "Unknown",
+        "patronus": "Unknown",
+        "occupations": [
+            {
+                "name": "Caretaker of Hogwarts"
+            },
+            {
+                "name": ""
+            }
+        ],
+        "house": "Unknown",
+        "actor": "David Bradley",
+        "wands": [],
+        "gender": "Male",
+        "blood_status": "Squib",
+        "marital_status": "Single"
+    },
+    {
+        "_id": "576e264bca4fbb360359e4cb",
+        "name": "Arthur Weasley",
+        "full_name": "Arthur Weasley",
+        "birth_date": "6 February, 1950",
+        "birth_address": "England, Great Britain",
+        "death_date": "Unknown",
+        "death_address": "Unknown",
+        "known_as": "None",
+        "hair_colour": "Red",
+        "eye_colour": "Blue",
+        "skin_colour": "Light",
+        "boggart": "Unknown",
+        "patronus": "Weasel",
+        "occupations": [
+            {
+                "name": "Head of the Misuse of Muggle Artefacts"
+            },
+            {
+                "name": "OfficeHead of the Office for the Detection and Confiscation of Counterfeit Defensive Spells and Protective Objects"
+            }
+        ],
+        "house": "Gryffindor",
+        "actor": "Mark Williams",
+        "wands": [],
+        "gender": "Male",
+        "blood_status": "Pure-blood",
+        "marital_status": "Married"
+    },
+    {
         "_id": "5766864795747823c7bcd157",
         "name": "Bellatrix Lestrange",
         "full_name": "Bellatrix Lestrange Black",
@@ -114,6 +172,35 @@
         ],
         "gender": "Male",
         "blood_status": "Half-blood",
+        "marital_status": "Single"
+    },
+    {
+        "_id": "576dbd77aeb3d5ef4ff4dc90",
+        "name": "Dobby",
+        "full_name": "Dobby",
+        "birth_date": "28 June, unknown year",
+        "birth_address": "Unknown",
+        "death_date": "Late March, 1998",
+        "death_address": "Shell Cottage, Tinworth, Cornwall, England",
+        "known_as": "None",
+        "hair_colour": "Unknown",
+        "eye_colour": "Tennis-ball green",
+        "skin_colour": "Unknown",
+        "boggart": "Unknown",
+        "patronus": "Unknown",
+        "occupations": [
+            {
+                "name": "Malfoy family's house-elf"
+            },
+            {
+                "name": "Hogwarts kitchens worker"
+            }
+        ],
+        "house": "Unknown",
+        "actor": "Toby Jones",
+        "wands": [],
+        "gender": "Male",
+        "blood_status": "House-elf",
         "marital_status": "Single"
     },
     {
@@ -644,6 +731,38 @@
         "marital_status": "Single"
     },
     {
+        "_id": "576e25e3ca4fbb360359e4ca",
+        "name": "Percy Weasley",
+        "full_name": "Percy Ignatius Weasley",
+        "birth_date": "22 August, 1976",
+        "birth_address": " Great Britain",
+        "death_date": "Unknown",
+        "death_address": "Unknown",
+        "known_as": "Perce ",
+        "hair_colour": "Red",
+        "eye_colour": "Blue",
+        "skin_colour": "Unknown",
+        "boggart": "Unknown",
+        "patronus": "Unknown",
+        "occupations": [
+            {
+                "name": "Personal assistant to Barty Crouch Senior"
+            },
+            {
+                "name": "Junior Assistant to the Minister for Magic"
+            },
+            {
+                "name": "Head of the Department of Magical Transportation"
+            }
+        ],
+        "house": "Gryffindor",
+        "actor": "Chris Rankin",
+        "wands": [],
+        "gender": "Male",
+        "blood_status": "Pure-blood",
+        "marital_status": "Married"
+    },
+    {
         "_id": "576b138ecfac3eab0215b0da",
         "name": "Quirinus Quirrell",
         "full_name": "Quirinus Quirrell",
@@ -917,6 +1036,38 @@
         ],
         "gender": "Male",
         "blood_status": "Half blood",
+        "marital_status": "Single"
+    },
+    {
+        "_id": "576e26a8ca4fbb360359e4cc",
+        "name": "Viktor Krum",
+        "full_name": "Viktor Krum",
+        "birth_date": "April-August, 1976,",
+        "birth_address": "Bulgaria",
+        "death_date": "Unknown",
+        "death_address": "Unknown",
+        "known_as": "Krum",
+        "hair_colour": "Dark",
+        "eye_colour": "Black",
+        "skin_colour": "Light",
+        "boggart": "Lord Voldemort",
+        "patronus": "Unknown",
+        "occupations": [
+            {
+                "name": "Seeker for the Bulgarian National Quidditch team"
+            }
+        ],
+        "house": "Unknown",
+        "actor": "Stanislav Ianevski",
+        "wands": [
+            {
+                "dimension": "10¼",
+                "tree": "Hornbeam",
+                "magical_creature": "dragon heartstring"
+            }
+        ],
+        "gender": "Male",
+        "blood_status": "Pure-blood",
         "marital_status": "Single"
     }
 ]

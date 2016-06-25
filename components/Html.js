@@ -13,7 +13,7 @@ function Html() {
         <div id="root"></div>
         <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
         <script src="http://materializecss.com/bin/materialize.js"></script>
-        <script src="/bundle.js" />
+        <script src="/build/bundle.js" />
       </body>
     </html>
   );

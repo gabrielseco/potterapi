@@ -34,10 +34,6 @@ var _fs2 = _interopRequireDefault(_fs);
 
 var _mongodb = require('mongodb');
 
-var _Html = require('../components/Html');
-
-var _Html2 = _interopRequireDefault(_Html);
-
 var _Schema = require('../models/Schema');
 
 var _Schema2 = _interopRequireDefault(_Schema);
@@ -54,15 +50,15 @@ function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, a
 
 _dotenv2.default.config();
 
-const app = (0, _express2.default)();
-const port = process.env.PORT || 5000;
+var app = (0, _express2.default)();
+var port = process.env.PORT || 5000;
 
 // Compiles client-side JavaScript code on the fly
 // https://github.com/webpack/webpack-dev-middleware
 if (process.env.NODE_ENV !== 'production') {
-  const webpack = require('webpack');
-  const webpackMiddleware = require('webpack-dev-middleware');
-  const webpackConfig = require('../tools/webpack.config').default;
+  var webpack = require('webpack');
+  var webpackMiddleware = require('webpack-dev-middleware');
+  var webpackConfig = require('../tools/webpack.config').default;
   app.use(webpackMiddleware(webpack(webpackConfig), {
     stats: webpackConfig.stats
   }));
@@ -71,82 +67,121 @@ if (process.env.NODE_ENV !== 'production') {
 app.use(_bodyParser2.default.json()); // support json encoded bodies
 app.use(_bodyParser2.default.urlencoded({ extended: true })); // support encoded bodies
 
+app.use('/', _express2.default.static('public'));
+
 // Register GraphQL middleware
 // https://github.com/graphql/express-graphql
-app.use('/graphql', (0, _expressGraphql2.default)(req => ({
-  schema: _Schema2.default,
-  graphiql: true,
-  rootValue: {
-    db: req.app.locals.db,
-    ObjectId: _mongodb.ObjectId
-  }
-})));
+app.use('/graphql', (0, _expressGraphql2.default)(function (req) {
+  return {
+    schema: _Schema2.default,
+    graphiql: true,
+    rootValue: {
+      db: req.app.locals.db,
+      ObjectId: _mongodb.ObjectId
+    }
+  };
+}));
 
 // Database access example
-app.get('/test', (() => {
-  var ref = _asyncToGenerator(function* (req, res, next) {
-    try {
-      const db = req.app.locals.db;
-      yield db.collection('log').insertOne({
-        time: new Date(),
-        ip: req.ip,
-        message: '/test visit'
-      });
-      res.send('<h1>Hello, world!</h1>');
-    } catch (err) {
-      next(err);
-    }
-  });
+app.get('/test', function () {
+  var ref = _asyncToGenerator(regeneratorRuntime.mark(function _callee(req, res, next) {
+    var db;
+    return regeneratorRuntime.wrap(function _callee$(_context) {
+      while (1) {
+        switch (_context.prev = _context.next) {
+          case 0:
+            _context.prev = 0;
+            db = req.app.locals.db;
+            _context.next = 4;
+            return db.collection('log').insertOne({
+              time: new Date(),
+              ip: req.ip,
+              message: '/test visit'
+            });
+
+          case 4:
+            res.send('<h1>Hello, world!</h1>');
+            _context.next = 10;
+            break;
+
+          case 7:
+            _context.prev = 7;
+            _context.t0 = _context['catch'](0);
+
+            next(_context.t0);
+
+          case 10:
+          case 'end':
+            return _context.stop();
+        }
+      }
+    }, _callee, undefined, [[0, 7]]);
+  }));
 
   return function (_x, _x2, _x3) {
     return ref.apply(this, arguments);
   };
-})());
+}());
 
-app.get('/getCharacter', (() => {
-  var ref = _asyncToGenerator(function* (req, res, next) {
-    const URL = "http://harrypotter.wikia.com/wiki/" + req.query.query;
-    console.log('URL', URL);
+app.get('/getCharacter', function () {
+  var ref = _asyncToGenerator(regeneratorRuntime.mark(function _callee2(req, res, next) {
+    var URL;
+    return regeneratorRuntime.wrap(function _callee2$(_context2) {
+      while (1) {
+        switch (_context2.prev = _context2.next) {
+          case 0:
+            URL = "http://harrypotter.wikia.com/wiki/" + req.query.query;
 
-    (0, _scrapeIt2.default)(URL, {
-      name: ".header-title h1",
-      full_name: ".portable-infobox .pi-title",
-      array_of_links: {
-        listItem: ".pi-data",
-        data: {
-          title: {
-            selector: '.pi-data-label'
-          },
-          desc: {
-            selector: '.pi-data-value'
-          }
+            console.log('URL', URL);
 
+            (0, _scrapeIt2.default)(URL, {
+              name: ".header-title h1",
+              full_name: ".portable-infobox .pi-title",
+              array_of_links: {
+                listItem: ".pi-data",
+                data: {
+                  title: {
+                    selector: '.pi-data-label'
+                  },
+                  desc: {
+                    selector: '.pi-data-value'
+                  }
+
+                }
+              }
+
+            }).then(function (page) {
+              page = (0, _functions.mapArrayValues)(page.array_of_links, page);
+              res.send(page);
+            });
+
+          case 3:
+          case 'end':
+            return _context2.stop();
         }
       }
-
-    }).then(function (page) {
-      page = (0, _functions.mapArrayValues)(page.array_of_links, page);
-      res.send(page);
-    });
-  });
+    }, _callee2, undefined);
+  }));
 
   return function (_x4, _x5, _x6) {
     return ref.apply(this, arguments);
   };
-})());
+}());
 
-// Serve an empty HTML page for all requests (SPA)
-app.get('*', (req, res) => {
-  const markup = _server2.default.renderToStaticMarkup(_react2.default.createElement(_Html2.default, null));
-  res.send(`<!doctype html>\n${ markup }`);
+//TODO: Implement fallback for react-router when the user reloads the page
+app.use('*', function (req, res) {
+  res.redirect('/');
 });
+
 //mongodb://ggarcia:temporal@ds011261.mlab.com:11261/harrypotter
 // Create a MonboDB connection pool and start the Node.js app
 _mongodb.MongoClient.connect(process.env.MONGO_URL, {
   promiseLibrary: _bluebird2.default
-}).catch(err => console.error(err.stack)).then(db => {
+}).catch(function (err) {
+  return console.error(err.stack);
+}).then(function (db) {
   app.locals.db = db; // See http://expressjs.com/en/4x/api.html#app.locals
-  app.listen(port, () => {
-    console.log(`Node.js app is listening at http://localhost:${ port }/`);
+  app.listen(port, function () {
+    console.log('Node.js app is listening at http://localhost:' + port + '/');
   });
 });

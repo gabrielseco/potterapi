@@ -4,11 +4,10 @@ const config = {
 
   context: path.resolve(__dirname, '../'),
 
-  entry: './client.js',
+  entry: path.resolve(__dirname, '../src/client.js'),
 
   output: {
-    path: path.resolve(__dirname, '../dist'),
-    publicPath: '/',
+    path: path.resolve(__dirname, '../public'),
     filename: 'bundle.js'
   },
 
@@ -40,7 +39,7 @@ const config = {
           path.resolve(__dirname, '../core'),
           path.resolve(__dirname, '../routes'),
           path.resolve(__dirname, '../transport'),
-          path.resolve(__dirname, '../client.js'),
+          path.resolve(__dirname, '../src/client.js'),
         ],
         query: {
           // https://babeljs.io/docs/usage/options/

@@ -11,7 +11,6 @@ import {
   MongoClient,
   ObjectId
 } from 'mongodb';
-import Html from '../components/Html';
 import schema from '../models/Schema';
 import scrapeIt from 'scrape-it';
 import {
@@ -39,6 +38,10 @@ if (process.env.NODE_ENV !== 'production') {
 
 app.use(bodyParser.json()); // support json encoded bodies
 app.use(bodyParser.urlencoded({ extended: true })); // support encoded bodies
+
+app.use('/', express.static('public'));
+
+
 
 // Register GraphQL middleware
 // https://github.com/graphql/express-graphql
@@ -95,11 +98,11 @@ app.get('/getCharacter', async(req, res, next) => {
 
 });
 
-// Serve an empty HTML page for all requests (SPA)
-app.get('*', (req, res) => {
-  const markup = ReactDOM.renderToStaticMarkup( < Html / > );
-  res.send(`<!doctype html>\n${markup}`);
-});
+//TODO: Implement fallback for react-router when the user reloads the page
+app.use('*', (req, res) => {
+  res.redirect('/');
+})
+
 //mongodb://ggarcia:temporal@ds011261.mlab.com:11261/harrypotter
 // Create a MonboDB connection pool and start the Node.js app
   MongoClient.connect(process.env.MONGO_URL, {
