@@ -31,6 +31,7 @@
     "style-loader": "^0.13.1"
   },
   "devDependencies": {
+    "babel-core": "^6.10.4",
     "babel-cli": "^6.7.5",
     "babel-loader": "^6.2.4",
     "babel-plugin-transform-runtime": "*",
@@ -48,7 +49,7 @@
     "dev": "babel-node ./src/server.js",
     "build": "npm run clean && npm run build-webpack && npm run build-server",
     "build-server": "babel src --out-dir build",
-    "build-webpack":"webpack -p --config ./tools/webpack.dist.config.js",
+    "build-webpack": "webpack -p --config ./tools/webpack.dist.config.js",
     "generate": "./node_modules/.bin/babel-node ./generateData.js"
   }
 }
