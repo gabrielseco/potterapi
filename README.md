@@ -6,7 +6,7 @@ The url available to make the api calls is https://potter-graphql.herokuapp.com/
 
 Install dependencies with
 
-```sh
+```
 npm install
 ```
 
@@ -19,15 +19,17 @@ I don't want people adding characters out of my database but requests are welcom
 
 For retrieving the name of the characters you'll use the next query
 
- ```sh{
+ ```
+ {
   characters{
   name
   }
-}```
+}
+```
 
 For retrieving  by field and ordering you'll use this
 
-```sh
+```
 query getCharacters($field:String!, $sort:Int!){
   characters(field:$field, sort:$sort){
     _id,
@@ -37,21 +39,9 @@ query getCharacters($field:String!, $sort:Int!){
 ```
 
 You can use this variables as example to return the characters by name
-```sh
+```
 {
   "field":"full_name",
   "sort":-1
 }
 ```
-
-
-## Technologies used
-
->GRAPHQLJS
->BABEL
->REACT
->REACT ROUTER
->WEBPACK
->AXIOS
->LOKKA
->SCRAPE-IT
