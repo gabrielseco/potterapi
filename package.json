@@ -38,15 +38,16 @@
     "babel-preset-node5": "^11.0.1",
     "babel-preset-react": "^6.5.0",
     "babel-preset-stage-0": "^6.5.0",
+    "babel-polyfill": "^6.0.16",
     "webpack": "^1.13.0",
     "webpack-dev-middleware": "^1.6.1"
   },
   "scripts": {
     "clean": "rm -rf build && mkdir build",
-    "start": "node ./build/server.js",
+    "start": "NODE_ENV=production node ./build/server.js",
     "dev": "babel-node ./src/server.js",
     "build": "npm run clean && npm run build-webpack && npm run build-server",
-    "build-server": "babel -d ./build ./src/server.js",
+    "build-server": "babel src --out-dir build",
     "build-webpack":"webpack -p --config ./tools/webpack.dist.config.js",
     "generate": "./node_modules/.bin/babel-node ./generateData.js"
   }

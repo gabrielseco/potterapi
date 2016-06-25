@@ -43,6 +43,14 @@ module.exports = {
         test: /\.jsx?$/,
         exclude: /(node_modules|bower_components)/,
         loader: 'babel',
+        include: [
+          path.resolve(__dirname, '../components'),
+          path.resolve(__dirname, '../core'),
+          path.resolve(__dirname, '../routes'),
+          path.resolve(__dirname, '../transport'),
+          path.resolve(__dirname, '../functions.js'),
+          path.resolve(__dirname, '../src/client.js'),
+        ],
         query: {
           presets: ['es2015','react','stage-0'],
           plugins: ["transform-runtime"],

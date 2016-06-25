@@ -34,7 +34,7 @@ var _fs2 = _interopRequireDefault(_fs);
 
 var _mongodb = require('mongodb');
 
-var _Schema = require('../models/Schema');
+var _Schema = require('./models/Schema');
 
 var _Schema2 = _interopRequireDefault(_Schema);
 
@@ -42,13 +42,15 @@ var _scrapeIt = require('scrape-it');
 
 var _scrapeIt2 = _interopRequireDefault(_scrapeIt);
 
-var _functions = require('../functions');
+var _functions = require('functions');
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, arguments); return new _bluebird2.default(function (resolve, reject) { function step(key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { return _bluebird2.default.resolve(value).then(function (value) { return step("next", value); }, function (err) { return step("throw", err); }); } } return step("next"); }); }; }
 
 _dotenv2.default.config();
+require("babel-core/register");
+require("babel-polyfill");
 
 var app = (0, _express2.default)();
 var port = process.env.PORT || 5000;

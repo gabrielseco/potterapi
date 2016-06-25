@@ -11,14 +11,16 @@ import {
   MongoClient,
   ObjectId
 } from 'mongodb';
-import schema from '../models/Schema';
+import schema from './models/Schema';
 import scrapeIt from 'scrape-it';
 import {
   mapArrayValues
-} from '../functions';
+} from 'functions';
 
 
 dotenv.config()
+require("babel-core/register");
+require("babel-polyfill");
 
 
 
