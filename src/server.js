@@ -11,11 +11,11 @@ import {
   MongoClient,
   ObjectId
 } from 'mongodb';
-import schema from './models/Schema';
+import schema from './models/schema';
 import scrapeIt from 'scrape-it';
 import {
   mapArrayValues
-} from 'functions';
+} from './functions';
 
 
 dotenv.config()

@@ -34,15 +34,15 @@ var _fs2 = _interopRequireDefault(_fs);
 
 var _mongodb = require('mongodb');
 
-var _Schema = require('./models/Schema');
+var _schema = require('./models/schema');
 
-var _Schema2 = _interopRequireDefault(_Schema);
+var _schema2 = _interopRequireDefault(_schema);
 
 var _scrapeIt = require('scrape-it');
 
 var _scrapeIt2 = _interopRequireDefault(_scrapeIt);
 
-var _functions = require('functions');
+var _functions = require('./functions');
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -75,7 +75,7 @@ app.use('/', _express2.default.static('public'));
 // https://github.com/graphql/express-graphql
 app.use('/graphql', (0, _expressGraphql2.default)(function (req) {
   return {
-    schema: _Schema2.default,
+    schema: _schema2.default,
     graphiql: true,
     rootValue: {
       db: req.app.locals.db,
