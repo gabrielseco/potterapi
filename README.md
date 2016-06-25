@@ -47,11 +47,11 @@ You can use this variables as example to return the characters by name
 
 ## Technologies used
 
-GRAPHQLJS
-BABEL
-REACT
-REACT ROUTER
-WEBPACK
-AXIOS
-LOKKA
-SCRAPE-IT
+>GRAPHQLJS
+>BABEL
+>REACT
+>REACT ROUTER
+>WEBPACK
+>AXIOS
+>LOKKA
+>SCRAPE-IT
