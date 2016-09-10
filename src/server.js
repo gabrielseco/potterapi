@@ -98,7 +98,6 @@ app.use('*', (req, res) => {
   res.redirect('/');
 })
 
-//mongodb://ggarcia:temporal@ds011261.mlab.com:11261/harrypotter
 // Create a MonboDB connection pool and start the Node.js app
   MongoClient.connect(process.env.MONGO_URL, {
     promiseLibrary: Promise
